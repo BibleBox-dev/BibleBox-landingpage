@@ -1,0 +1,25 @@
+/* Webfonts
+-------------------------------------------------- */
+
+@font-face {
+    font-family: 'geared_slabregular';
+    src: url('fonts/gearedslab-webfont.eot');
+    src: url('fonts/gearedslab-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gearedslab-webfont.woff') format('woff'),
+         url('fonts/gearedslab-webfont.ttf') format('truetype'),
+         url('fonts/gearedslab-webfont.svg#geared_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  { font-family: geared_slabregular,"Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 325%; line-height:110%;}
+
+.brand {
+  font-family: geared_slabregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
