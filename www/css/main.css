@@ -181,6 +181,11 @@ button:hover, button:active {
   width: 100%;
 }
 
+.one-third,
+.two-thrids {
+  margin: 0 0 1em;
+}
+
 @media screen and (min-width: 600px) {
   #header #menu-icon {
     display: none;
@@ -222,16 +227,6 @@ button:hover, button:active {
     display: none;
   }
 
-  .fourth {
-    float: left;
-    margin: 0 0 1em;
-    width: 50%;
-  }
-
-  .half {
-    clear: both;
-  }
-
   .card {
     padding: 0 2em 0 0;
   }
@@ -247,18 +242,7 @@ button:hover, button:active {
     width: 90%;
   }
 
-  .fourth {
-    float: left;
-    width: 25%;
-  }
-
-  .half {
-    clear: none;
-    float: left;
-    width: 50%;
-  }
-
-  .third {
+  .one-third {
     float: left;
     width: 33.33333%;
   }

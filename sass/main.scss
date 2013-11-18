@@ -80,148 +80,131 @@
 	width: 100%;
 }
 
+.one-third, 
+.two-thrids {
+	margin: 0 0 1em;
+}
+
 @media screen and (min-width: 600px) {
-#header {
-	#menu-icon {
-		display: none;
-	}
-	#top-nav {
-		.brand {
-			float: left;
-			margin: 0 1em 0 0;
+	#header {
+		#menu-icon {
+			display: none;
 		}
-		
-		ul {
-			display: block;
-			li {
-			   float: left;
-			   &:last-child {
-					margin: 0;
+		#top-nav {
+			.brand {
+				float: left;
+				margin: 0 1em 0 0;
+			}
+			
+			ul {
+				display: block;
+				li {
+				   float: left;
+				   &:last-child {
+						margin: 0;
+					}
 				}
 			}
 		}
 	}
-}
 
-#content {
-	#welcome {}
-	
-	#files-top {}
-	
-	#files-latest {}
+	#content {
+		#welcome {}
+		
+		#files-top {}
+		
+		#files-latest {}
 
-	#chat {
-		#shoutbox {}
+		#chat {
+			#shoutbox {}
 
-		#shoutbox-input {
-			input,
-			button {
-				float: left;
+			#shoutbox-input {
+				input,
+				button {
+					float: left;
+				}
+				.nickname {
+					margin: 0 5px 0 0;
+					width: 15%;
+				}
+				.message {
+					margin: 0 5px 0 0;
+					width: 70%;
+				}
+				.button {
+					width: 10%;
+				}
 			}
-			.nickname {
-				margin: 0 5px 0 0;
-				width: 15%;
-			}
-			.message {
-				margin: 0 5px 0 0;
-				width: 70%;
-			}
-			.button {
-				width: 10%;
+
+			#shoutbox-options {
+				display: none;
 			}
 		}
+	}
 
-		#shoutbox-options {
+	#footer {
+		.to-top {
 			display: none;
 		}
 	}
-}
 
-#footer {
-	.to-top {
-		display: none;
+	.card {
+		padding: 0 2em 0 0;
 	}
-}
-
-.fourth {
-	float: left;
-	margin: 0 0 1em;
-	width: 50%;
-}
-
-.half {
-	clear: both;
-}
-
-.card {
-	padding: 0 2em 0 0;
-}
-	.last {
-		padding: 0;
-	}
+		.last {
+			padding: 0;
+		}
 
 }
 
 //----------------[ Desktop ]
 @media screen and (min-width: 801px) {
+	#header {
+		#menu-icon {}
+		#top-nav {
+			.brand {}
+			
+			ul {
+				li {}
+			}
+		}
+	}
 
-#header {
-	#menu-icon {}
-	#top-nav {
-		.brand {}
+	#content {
+		#welcome {}
 		
-		ul {
-			li {}
+		#files-top {}
+		
+		#files-latest {}
+
+		#chat {
+			#shoutbox {}
+
+			#shoutbox-input {
+				.nickname {}
+				.message {}
+			}
+
+			#shoutbox-options {}
 		}
 	}
-}
 
-#content {
-	#welcome {}
-	
-	#files-top {}
-	
-	#files-latest {}
+	#footer {}
 
-	#chat {
-		#shoutbox {}
-
-		#shoutbox-input {
-			.nickname {}
-			.message {}
-		}
-
-		#shoutbox-options {}
+	.container {
+		margin: 0 auto;
+		max-width: 1280px;
+		width: 90%;
 	}
-}
 
-#footer {}
+	.one-third {
+		float: left;
+		width: 1 / 3 * 100%;
+	}
 
-.container {
-	margin: 0 auto;
-	max-width: 1280px;
-	width: 90%;
-}
-
-.fourth {
-	float: left;
-	width: 25%;
-}
-
-.half {
-	clear: none;
-	float: left;
-	width: 50%;
-}
-
-.third {
-	float: left;
-	width: 1 / 3 * 100%;
-}
-
-.two-thirds {
-	float: left;
-	width: 2 / 3 * 100%;
-}
+	.two-thirds {
+		float: left;
+		width: 2 / 3 * 100%;
+	}
 
 }
