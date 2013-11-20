@@ -51,6 +51,10 @@
 	#chat {
 		#shoutbox {
 			height: 300px;
+			margin: 0 0 .5em;
+			.message {
+				margin: 0 0 .10em;
+			}
 		}
 
 		#shoutbox-input {

@@ -79,16 +79,13 @@ p {
 		}
 	}
 	#shoutbox {
-		.post {
-			.message {}
-			.info {
-				font-size: .75em;
-				.icon {}
-				.name {
-					font-weight: $bold;
-				}
-				.date {}
-				.time {}
+		.message {
+			font-size: .8em;
+			date {
+				color: darken($gray, 30%);
+			} 
+			name {
+				font-weight: $bold;
 			}
 		}
 	}

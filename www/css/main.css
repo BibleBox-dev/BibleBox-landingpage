@@ -83,10 +83,13 @@ p:first-child {
   margin: 0;
   padding: 0;
 }
-#content #shoutbox .post .info {
-  font-size: .75em;
+#content #shoutbox .message {
+  font-size: .8em;
 }
-#content #shoutbox .post .info .name {
+#content #shoutbox .message date {
+  color: #949494;
+}
+#content #shoutbox .message name {
   font-weight: 700;
 }
 
@@ -160,6 +163,10 @@ button:hover, button:active {
 }
 #content #chat #shoutbox {
   height: 300px;
+  margin: 0 0 .5em;
+}
+#content #chat #shoutbox .message {
+  margin: 0 0 .10em;
 }
 #content #chat #shoutbox-options {
   display: none;
