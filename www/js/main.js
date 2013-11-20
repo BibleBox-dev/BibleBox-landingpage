@@ -1,20 +1,4 @@
 $(document).ready(function() {
-	//load modules
-	$.getJSON('js/modules.json', function(data) {
-		if (data.chat == false) {
-	    	$('#chat').hide();
-	    	console.log('Chat hidden.')
-	    }
-	    if (data.filesLatest == false) {
-	    	$('#files-latest').hide();
-	    	console.log('Lates files hidden.')
-	    }
-	    if (data.filesTop == false) {
-	    	$('#files-top').hide();
-	    	console.log('Top files hidden.')
-	    }
-	});
-
 	// toggle nav on-click	
 	$('#menu-icon').click(function () {
 		$('#top-nav ul').slideToggle(500);
