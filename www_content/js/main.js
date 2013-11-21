@@ -6,12 +6,12 @@ $(document).ready(function() {
 	});
 
 	// get forban
-	$.get('forban_link.html', function(data) {
+	$.get('/forban_link.html', function(data) {
         $('div#forban_link').html(data);
     });
 	
 	// get station counter
-	$.get('station_cnt.txt', function(data) {
+	$.get('/station_cnt.txt', function(data) {
         $('div#station').html(data);
     });
    	
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 
 function refresh_shoutbox () {
-    $.get('chat_content.html', function(data) {
+    $.get('/chat_content.html', function(data) {
    		$('div#shoutbox').html(data);
    	});
 }
