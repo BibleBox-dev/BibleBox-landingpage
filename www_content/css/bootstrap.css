@@ -18,8 +18,15 @@ main,
 nav,
 section,
 summary {
-  display: block;
+	display: block;
+	background-color: #FFF;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
 
 audio,
 canvas,
@@ -46,6 +53,7 @@ html {
 body {
   color: #474747;
   font-family: "Open Sans", sans-serif;
+  src: url("../fonts/OpenSans-Regular.ttf");
   font-size: 100%;
   font-weight: 400;
   line-height: 1.4;
@@ -308,11 +316,10 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333333;
+	background-color: #0098CD;
 }
 
 input,
@@ -336,9 +343,12 @@ a:focus {
 }
 
 a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	font-family: Open Sans, serif;
+	background-color: #FFF;
+	color: #0098C9;
 }
 
 img {
@@ -403,7 +413,8 @@ h6,
 .h5,
 .h6 {
   
-  font-family: 'GearedSlab', serif;
+  font-family: 'Open Sans', serif;
+  src: url("../fonts/OpenSans-Regular.ttf");
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -472,12 +483,14 @@ h6 .small {
 
 h1,
 .h1 {
-  font-size: 36px;
+	font-size: 36px;
+	font-family: "Open Sans", serif;
+	src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 h2,
 .h2 {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 h3,
@@ -7129,8 +7142,3 @@ td.visible-print {
     display: none !important;
   }
 }
-
-
-
-
-
