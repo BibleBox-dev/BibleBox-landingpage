@@ -10,6 +10,14 @@
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/structure.css">
 
+<script type="text/javascript">
+function refresh() {
+ frame = document.getElementsByName( 'psoread' )[0];
+ frame.contentWindow.location.reload()
+}
+interval = window.setInterval( 'refresh()', 8000 );
+</script>
+
 </head>
 <body>
 
@@ -17,7 +25,7 @@
     <div id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-        	<a href="/" class="brand navbar-brand">BibleBox</a>
+        	<a href="/biblebox.lan" class="brand navbar-brand">BibleBox</a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -27,7 +35,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/biblebox.lan" class="active">Home</a></li>
 						<li><a href="/Shared/text/">Text</a></li>
 						<li><a href="/Shared/audio/">Audio</a></li>
 						<li><a href="/Shared/video/">Video</a></li>
@@ -50,23 +58,28 @@
 			<div id="welcome">
 				<div class="container">
 					<h1><img src="img/logo_biblebox-320x69.png" width="280" height="60" alt="BibleBox"></h1>
-					<h1>About the BibleBox Project</h1>
-					<p>The BibleBox Project aims to provide a cheap, simple wireless device to share digital Bible resources to users of wifi enabled phones, tablets and laptops.					The mission is to enable more people to come to know the good news of Jesus Christ.</p>
-					<p>&nbsp;</p>
-					<p>There is no internet connection required.  A user with a wireless enabled device such as a smartphone, tablet or laptop simply connects to the BibleBox wifi SSID and opens their web browser.  The BibleBox then provides the user with a web based interface providing access to the shared files stored on the connected USB drive.</p>
-					<p>&nbsp;</p>
-					<p>Users accessing files on the BibleBox are not able to access the internet, as there is no connection other than the wifi link to the BibleBox.  No user information is required or stored on the BibleBox.  </p>
-					<p>&nbsp;</p>
-					<p>It simply provides a free wifi network to enable access to the shared files. This makes the BibleBox ideal for sharing files privately and securely. No login is required, no interaction with anyone is required.  Simply connect to the BibleBox wifi and access the shared<img src="img/512 Icon grey bdr.png" alt="BibleBox icon" width="260" height="260" hspace="10" vspace="10" align="right"> files from your device.</p>
-<p>&nbsp;</p>
-					<p>Look for the BibleBox logo which identifies a BibleBox in the area.</p>
-					<p>&nbsp;</p>
-					<p>For more information visit - http://BibleBox.org</p>
-					<p>Facebook - http://www.Facebook.com/TheBibleBox</p>
-					<p>Twitter - http://www.twitter.com/thebiblebox</p>
-					<p>&nbsp;</p>
-<p>&nbsp;</p>
-					<p>&nbsp;</p>
+					<h1>Chat Box</h1>
+					
+<br>
+
+<iframe name="psoread" src="/cgi-bin/psoread.py" width="95%" height="275" frameBorder="1" #ccc>
+Your browser does not support inline frames or is currently configured not to display inline frames.</iframe></p>
+<script language="javascript">
+<!--
+function reset() {
+self.document.psowrte.data.value="";
+self.document.psowrte.data.focus();
+}
+-->
+</script>
+
+<form method="POST" action="/cgi-bin/psowrte.py" target="psoread" name="psowrte" onsubmit="setTimeout('reset()',10)"> 
+<b>Name:</b><input type="text" value="anonymous" name="name" size="10">&nbsp;&nbsp; <b>Message:</b><input type="text" name="data" size="20">&nbsp;&nbsp;
+<input type="submit" value="Send" name="submit"><br>
+
+</form>
+
+
 				</div>
 			</div>
 			<div class="container"></div>
