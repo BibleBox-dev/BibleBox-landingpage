@@ -40,7 +40,7 @@ function refresh_shoutbox () {
   
 function refresh_time_sb () {
     // Refresh rate in milli seconds
-    mytime=setTimeout('display_shoutbox()', 4000);
+    mytime=setTimeout('display_shoutbox()', 10000);
 }
 
 function post_shoutbox () {
