@@ -136,10 +136,12 @@ textarea:first-child {
 }
 
 #footer {
-	border-top: 1px solid #922e0f;
 	margin: 2em 0 0 0;
 	padding: 0 0 1em;
 	background-color: #0098D2;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #034475;
 }
 #footer .to-top {
   float: right;

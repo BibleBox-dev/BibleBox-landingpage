@@ -21,6 +21,14 @@ summary {
   display: block;
 }
 
+@font-face
+{
+	font-family: Open Sans;
+	src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+
+
 audio,
 canvas,
 video {
@@ -336,9 +344,10 @@ a:focus {
 }
 
 a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	font-family: GearedSlab, serif;
 }
 
 img {
@@ -472,12 +481,14 @@ h6 .small {
 
 h1,
 .h1 {
-  font-size: 36px;
+	font-size: 36px;
+	font-family: "Open Sans", serif;
 }
 
 h2,
 .h2 {
-  font-size: 30px;
+	font-size: 30px;
+	font-family: "Open Sans", serif;
 }
 
 h3,
@@ -504,7 +515,8 @@ p {
   margin: 1em 0 0;
 }
 p:first-child {
-  margin-top: 0;
+	margin-top: 0;
+	font-family: "Open Sans", sans-serif;
 }
 
 .lead {
@@ -7129,8 +7141,3 @@ td.visible-print {
     display: none !important;
   }
 }
-
-
-
-
-
