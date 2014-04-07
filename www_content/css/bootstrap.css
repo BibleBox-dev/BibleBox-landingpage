@@ -21,14 +21,6 @@ summary {
   display: block;
 }
 
-@font-face
-{
-	font-family: Open Sans;
-	src: url(/fonts/OpenSans-Regular.ttf);
-}
-
-
-
 audio,
 canvas,
 video {
@@ -316,11 +308,11 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333333;
+	background-color: #ffffff;
 }
 
 input,
@@ -344,10 +336,9 @@ a:focus {
 }
 
 a:focus {
-	outline: thin dotted;
-	outline: 5px auto -webkit-focus-ring-color;
-	outline-offset: -2px;
-	font-family: GearedSlab, serif;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 img {
@@ -412,7 +403,7 @@ h6,
 .h5,
 .h6 {
   
-  font-family: 'GearedSlab', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -481,14 +472,12 @@ h6 .small {
 
 h1,
 .h1 {
-	font-size: 36px;
-	font-family: "Open Sans", serif;
+  font-size: 36px;
 }
 
 h2,
 .h2 {
-	font-size: 30px;
-	font-family: "Open Sans", serif;
+  font-size: 30px;
 }
 
 h3,
@@ -516,7 +505,7 @@ p {
 }
 p:first-child {
 	margin-top: 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .lead {
@@ -4514,7 +4503,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 20px;
 }
 
